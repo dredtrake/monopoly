@@ -6,7 +6,7 @@ body {
 
 h1 {
     text-align: center;
-    color: green;
+    color: #008000;
     font-size: 2rem;
 }
 
@@ -14,13 +14,31 @@ p {
     width: 50%;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .monopoly-board {
-    border: 4px solid orange;
+    border: 8px solid red;
     background-color: green;
-    width: 500px;
-    height: 500px;
+    width: 800px;
+    height: 800px;
     display: block;
     margin: 5% auto 0;
-    /* transform: perspective(500px) rotatex(75deg); */
+    /* transform    : perspective(500px) rotatex(75deg); */
     /* transition: all 0.7s ease-out; */
+}
+
+.monopoly-board > div {
+    display: inline-block;
+    width: 7.692307692%;
+    height: 100px;
+    background-color: pink;
+    vertical-align: middle;
+    border: 1px solid black;
+}
+
+.monopoly-board .carre {
+    width: 15.384615384%;
+
 }
