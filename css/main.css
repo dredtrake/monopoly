@@ -1,0 +1,26 @@
+body {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+    color: green;
+    font-size: 2rem;
+}
+
+p {
+    width: 50%;
+}
+
+.monopoly-board {
+    border: 4px solid orange;
+    background-color: green;
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: 5% auto 0;
+    /* transform: perspective(500px) rotatex(75deg); */
+    /* transition: all 0.7s ease-out; */
+}
