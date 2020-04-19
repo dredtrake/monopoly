@@ -10,37 +10,80 @@ h1 {
     font-size: 2rem;
 }
 
-p {
-    width: 50%;
-}
-
 * {
     box-sizing: border-box;
 }
 
-.monopoly-board {
-    border: 8px solid red;
-    background-color: green;
-    width: 800px;
-    height: 800px;
-    display: block;
-    margin: 5% auto 0;
-    /* transform    : perspective(500px) rotatex(75deg); */
-    /* transition: all 0.7s ease-out; */
+.go {
+    grid-column: 11;
+    grid-row: 11 / 12;
+    position: relative;
 }
 
-.monopoly-board > div {
-    display: inline-block;
-    width: 7.692307692%;
+.space {
+    background: #fafaf8;
+    text-align: center;
+}
+
+.go .container {
+    height: 100%;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.space .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    transform-origin: center;
     height: 100px;
-    background-color: pink;
-    vertical-align: middle;
-    border: 1px solid black;
+    width: 60px;
 }
 
-.monopoly-board .carre {
-    width: 15.384615384%;
+.bottom-row {
+    grid-column: 2 / 11;
+    grid-row: 11;
+}
 
+.jail {
+    grid-column: 1;
+    grid-row: 11 / 12;
+    position: relative;
+}
+
+.left-row {
+    grid-column: 1;
+    grid-row: 2 / 11;
+}
+
+.vertical-row {
+    grid-template-columns: 100px;
+    grid-template-rows: repeat(9, 60px);
+}
+
+.free-parking {
+    grid-column: 1;
+    grid-row: 1 / 2;
+}
+
+.top-row {
+    grid-column: 2 / 11;
+    grid-row: 1;
+}
+.horizontal-row {
+    grid-template-columns: repeat(9, 60px);
+    grid-template-rows: 100px;
+}
+
+.tribunal {
+    grid-column: 11;
+    grid-row: 1 / 1;
+}
+
+.right-row {
+    grid-column: 11;
+    grid-row: 2 / 11;
 }
 
 .board {
@@ -58,7 +101,7 @@ p {
 .zone-center {
     grid-column: 2 / 11;
     grid-row: 2 / 11;
-    background: #fafaf8;
+    background: #FFBB44;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(7, 1fr);
