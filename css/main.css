@@ -103,6 +103,7 @@ h1 {
     height: 766px;
     background: #CFBDA1;
     border: 2px solid #080808;
+    position: relative;
 }
 
 .zone-center {
@@ -140,4 +141,16 @@ h1 {
 
 .price {
     font-weight: 500;
+}
+
+.player {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+    transition: all 1s ease;
+}
+
+.player-red {
+    color: red;
 }
