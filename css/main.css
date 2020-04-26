@@ -99,11 +99,11 @@ h1 {
     grid-template-rows: 100px repeat(9, 60px) 100px;
     grid-gap: 2px;
     margin: 50px auto;
-    width: 766px;
-    height: 766px;
-    background: #CFBDA1;
-    border: 2px solid #080808;
+    width: 764px;
+    height: 764px;
+    background: #000;
     position: relative;
+    border: 2px solid black;
 }
 
 .zone-center {
@@ -124,6 +124,7 @@ h1 {
 
 .block-color {
     height: 20px;
+    border-bottom: 2px solid black;
 }
 
 .purple {
