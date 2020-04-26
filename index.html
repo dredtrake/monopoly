@@ -12,6 +12,10 @@
     </head>
     <body>
         <h1>Mon super monopoly</h1>
+        <button onclick="avance('gauche');">avance gauche</button>
+        <button onclick="avance('droite');">avance droite</button>
+        <button onclick="avance('haut');">avance haut</button>
+        <button onclick="avance('bas');">avance bas</button>
         <div class="board">
             <div id="player-1" class="player player-red">
                 <i class="fas fa-camera fa-3x"></i>
@@ -87,5 +91,26 @@
             </div>
             <div class="vertical-row right-row"></div>
         </div>
+        <script>
+            const largeur = 766;
+            const hauteur = 766;
+            const playerLargeur = 48;
+            const playerHauteur = 48;
+            function avance (direction) {
+                if (direction === 'gauche') {
+                    const joueur = document.getElementById('player-1');
+                    joueur.style.right = (largeur - playerLargeur ) + 'px' ;
+                } else if (direction === 'droite') {
+                    const joueur = document.getElementById('player-1');
+                    joueur.style.right = '0px' ;
+                } else if (direction === 'haut') {
+                    const joueur = document.getElementById('player-1');
+                    joueur.style.bottom = (hauteur - playerHauteur ) + 'px' ;
+                } else if (direction === 'bas') {
+                    const joueur = document.getElementById('player-1');
+                    joueur.style.bottom = '0px' ;
+                }
+            }
+        </script>
     </body>
 </html>
