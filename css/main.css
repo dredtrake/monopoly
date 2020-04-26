@@ -2,6 +2,7 @@ body {
     height: 100%;
     margin: 0;
     font-size: 16px;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 h1 {
@@ -39,6 +40,12 @@ h1 {
     transform-origin: center;
     height: 100px;
     width: 60px;
+}
+.space .container p {
+    margin: 0;
+}
+.space.train-station .container .place {
+    margin-top: 10px;
 }
 
 .bottom-row {
@@ -107,4 +114,30 @@ h1 {
     grid-template-rows: repeat(7, 1fr);
     justify-items: center;
     align-items: center;
+}
+
+.row {
+    display: grid;
+    grid-gap: 2px;
+}
+
+.block-color {
+    height: 20px;
+}
+
+.purple {
+    background-color: purple;
+}
+.light-blue {
+    background-color: skyblue;
+}
+
+.place {
+    font-size: 0.8rem;
+    line-height: 0.9;
+    font-weight: 300;
+}
+
+.price {
+    font-weight: 500;
 }
