@@ -19,6 +19,7 @@ h1 {
     grid-column: 11;
     grid-row: 11 / 12;
     position: relative;
+    
 }
 
 .space {
@@ -39,8 +40,12 @@ h1 {
     position: relative;
     transform-origin: center;
     height: 120px;
-    width: 60px;
+    width: 60px; 
+    font-size: 0.65rem;
+    word-wrap: break-word; 
 }
+
+
 .space .container p {
     margin: 0;
 }
@@ -109,7 +114,7 @@ h1 {
 .zone-center {
     grid-column: 2 / 11;
     grid-row: 2 / 11;
-    background: #FFBB44;
+    background: #ecfcf4;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(7, 1fr);
@@ -139,6 +144,7 @@ h1 {
     line-height: 0.9;
     font-weight: 300;
 }
+
 
 .price {
     font-weight: 500;
