@@ -38,7 +38,7 @@ h1 {
     justify-content: space-between;
     position: relative;
     transform-origin: center;
-    height: 100px;
+    height: 120px;
     width: 60px;
 }
 .space .container p {
@@ -65,7 +65,7 @@ h1 {
 }
 
 .vertical-row {
-    grid-template-columns: 100px;
+    grid-template-columns: 120px;
     grid-template-rows: repeat(9, 60px);
 }
 
@@ -80,7 +80,7 @@ h1 {
 }
 .horizontal-row {
     grid-template-columns: repeat(9, 60px);
-    grid-template-rows: 100px;
+    grid-template-rows: 120px;
 }
 
 .tribunal {
@@ -95,12 +95,12 @@ h1 {
 
 .board {
     display: grid;
-    grid-template-columns: 100px repeat(9, 60px) 100px;
-    grid-template-rows: 100px repeat(9, 60px) 100px;
+    grid-template-columns: 120px repeat(9, 60px) 120px;
+    grid-template-rows: 120px repeat(9, 60px) 120px;
     grid-gap: 2px;
     margin: 50px auto;
-    width: 764px;
-    height: 764px;
+    width: 804px;
+    height: 804px;
     background: #000;
     position: relative;
     border: 2px solid black;
