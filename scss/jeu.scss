@@ -1,0 +1,134 @@
+.go {
+    grid-column: 11;
+    grid-row: 11 / 12;
+    position: relative;
+    
+}
+
+.space {
+    background: $light;
+    text-align: center;
+}
+
+.go .container {
+    height: 100%;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.space .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    transform-origin: center;
+    height: 120px;
+    width: 60px; 
+    font-size: 0.65rem;
+    word-wrap: break-word; 
+}
+
+
+.space .container p {
+    margin: 0;
+}
+.space.train-station .container .place {
+    margin-top: 10px;
+}
+
+.bottom-row {
+    grid-column: 2 / 11;
+    grid-row: 11;
+}
+
+.jail {
+    grid-column: 1;
+    grid-row: 11 / 12;
+    position: relative;
+}
+
+.left-row {
+    grid-column: 1;
+    grid-row: 2 / 11;
+}
+
+.vertical-row {
+    grid-template-columns: 120px;
+    grid-template-rows: repeat(9, 60px);
+}
+
+.free-parking {
+    grid-column: 1;
+    grid-row: 1 / 2;
+}
+
+.top-row {
+    grid-column: 2 / 11;
+    grid-row: 1;
+}
+.horizontal-row {
+    grid-template-columns: repeat(9, 60px);
+    grid-template-rows: 120px;
+}
+
+.tribunal {
+    grid-column: 11;
+    grid-row: 1 / 1;
+}
+
+.right-row {
+    grid-column: 11;
+    grid-row: 2 / 11;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: 120px repeat(9, 60px) 120px;
+    grid-template-rows: 120px repeat(9, 60px) 120px;
+    grid-gap: 2px;
+    margin: 50px auto;
+    width: 804px;
+    height: 804px;
+    background: $black;
+    position: relative;
+    border: 2px solid $black;
+}
+
+.zone-center {
+    grid-column: 2 / 11;
+    grid-row: 2 / 11;
+    background: #ecfcf4;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.row {
+    display: grid;
+    grid-gap: 2px;
+}
+
+.block-color {
+    height: 20px;
+    border-bottom: 2px solid $black;
+}
+
+.purple {
+    background-color: $purple;
+}
+.light-blue {
+    background-color: $skyblue;
+}
+
+.place {
+    font-size: 0.8rem;
+    line-height: 0.9;
+    font-weight: 300;
+}
+
+
+.price {
+    font-weight: 500;
+}

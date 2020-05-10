@@ -11,6 +11,6 @@
     "node-sass": "^4.14.1"
   },
   "scripts": {
-    "build-css": "node-sass --include-path scss scss/main.scss css/main.css --output-style compact"
+    "build-css": "node-sass --output-style compressed --include-path scss scss/main.scss css/main.css"
   }
 }
