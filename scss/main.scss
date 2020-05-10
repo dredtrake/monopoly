@@ -1,19 +1,4 @@
-body {
-    height: 100%;
-    margin: 0;
-    font-size: 16px;
-    font-family: 'Rajdhani', sans-serif;
-}
-
-h1 {
-    text-align: center;
-    color: #008000;
-    font-size: 2rem;
-}
-
-* {
-    box-sizing: border-box;
-}
+@import "./html";
 
 .go {
     grid-column: 11;
